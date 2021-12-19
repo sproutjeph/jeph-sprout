@@ -42,7 +42,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className="h-[50px] w-[50px] absolute  left-[55%] dark:bg-[#1c1c1e] bg-[#59f9b7] rounded-full p-[10px] cursor-pointer"
+        className="invisible lg:visible h-[50px] w-[50px] absolute  left-[55%] dark:bg-[#1c1c1e] bg-[#59f9b7] rounded-full p-[10px] cursor-pointer"
         onClick={changeTheme}
       >
         <Image

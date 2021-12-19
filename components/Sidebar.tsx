@@ -12,15 +12,15 @@ function Sidebar() {
   const { setTheme, theme } = useTheme();
 
   const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
   return (
     <div>
-      <div className="w-32 h-32 mx-auto img-container">
+      <div className="w-[130px] h-[130px] mx-auto img-container">
         <Image
           src="/images/jeph.jpg"
-          height={300}
-          width={300}
+          height="150px"
+          width="150px"
           alt="jephs photo"
           className="relative object-cover w-full h-full mx-auto rounded-full"
         />
@@ -78,18 +78,18 @@ function Sidebar() {
           <GoLocation className="mr-2" /> <span>Taraba,Nigeria </span>
         </div>
         <p className="my-2 "> donjeph@gmail.com </p>
-        <p className="my-2"> +2347065406165 / 8640960375 </p>
+        <p className="my-2"> +2347065406165&nbsp; / +2348122107647</p>
       </div>
 
       <button
-        className="w-8/12 px-5 py-2 text-white rounded-full cursor-pointer bg-gradient-to-r from-green to-[#66feea] hover:scale-105 focus:outline-none"
+        className="w-8/12 px-5 py-2   text-black font-bold rounded-full cursor-pointer bg-gradient-to-r from-green to-[#66feea] hover:scale-105 focus:outline-none"
         onClick={() => window.open('mailto:donjeph@gmail.com')}
       >
-        Email me
+        Email Me
       </button>
       <button
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-4 text-white rounded-full cursor-pointer bg-gradient-to-r from-green to-[#66feea] focus:outline-none hover:scale-105 "
+        className="w-8/12 px-5 py-2 my-4 text-black font-bold rounded-full cursor-pointer bg-gradient-to-r from-green to-[#66feea] focus:outline-none hover:scale-105 "
       >
         Toggle Theme
       </button>
